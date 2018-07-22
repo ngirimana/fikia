@@ -6,7 +6,7 @@ function Login() {
           <div className="row">
             <div className="main">
               <h3>
-                Please Log In, or <a href="#">Sign Up</a>
+              Please Log In, or <a href='../signup'>Sign Up</a>
               </h3>
               <a href="#" className="btn btn-lg btn-danger btn-block btn-labeled">
                 <span className="btn-label">

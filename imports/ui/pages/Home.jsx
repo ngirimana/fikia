@@ -48,7 +48,7 @@ function Home() {
                     <h1>Market Insight</h1>
                     <h3>Get accurate information about the market and exploit opportunity</h3>
                   </hgroup>
-                  <button class="btn btn-hero btn-lg" role="button">
+                  <button className="btn btn-hero btn-lg" role="button">
                     See all features
                   </button>
                 </div>
@@ -56,74 +56,67 @@ function Home() {
             </div>
           </div>
           
-          <div className={classNames("Home", "foo", "bar")}>
-      
-
-
-            
-            <div>{/* this is where our partners go */}</div>
-
-            <h4>What we do</h4>
-
-            <ul>
-              {/* <i>icon */}
-              <li>Are you an</li>
-              <ul>
-                <li>entrepreneur?</li>
-                <li>researcher?</li>
-                <li> investor?</li>
-              </ul>
-              {/* <i>icon */}
-              <li>
-                Looking to create an impactfull product/service that serves your
-                community?
-              </li>
-              {/* <i>icon */}
-              <li>User Fikia to:</li>
-              <ul>
-                <li>gain access to reliable,relevant data</li>
-                <li>forecast revenue</li>
-                <li>get deeper insight into consumer behaviour</li>
-              </ul>
-              {/* <i>icon */}
-              <li>Make informed decision on:</li>
-              <ul>
-                <li>how to grow your business</li>
-                <li>where to invest</li>
-                <li>how/when to expand to other markets</li>
-              </ul>
-            </ul>
-            <h4>What we do</h4>
-
-            <ul>
-              {/* <i>icon */}
-              <li>Are you an</li>
-              <ul>
-                <li>entrepreneur?</li>
-                <li>researcher?</li>
-                <li> investor?</li>
-              </ul>
-              {/* <i>icon */}
-              <li>
-                Looking to create an impactfull product/service that serves your
-                community?
-                    </li>
-              {/* <i>icon */}
-              <li>User Fikia to:</li>
-              <ul>
-                <li>gain access to reliable,relevant data</li>
-                <li>forecast revenue</li>
-                <li>get deeper insight into consumer behaviour</li>
-              </ul>
-              {/* <i>icon */}
-              <li>Make informed decision on:</li>
-              <ul>
-                <li>how to grow your business</li>
-                <li>where to invest</li>
-                <li>how/when to expand to other markets</li>
-              </ul>
-            </ul>
-          </div>
+          <div className="container-12 bootstrap snippet">
+            <section id="services" className="current">
+              <div className="services-top">
+                <div className="container-12 bootstrap snippet">
+                  <div className="row text-center">
+                    <div className="col-sm-12 col-md-12 col-md-12">
+                      <h2>What We Do</h2>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-offset-1 col-sm-12 col-md-12 col-md-10">
+                      <div className="services-list">
+                        <div className="row">
+                          <div className="col-sm-6 col-md-3 col-md-3">
+                            <div className="service-block" >
+                              <div className="ico fa fa-magic highlight"></div>
+                              <div className="text-block">
+                                <div className="name">Web Design</div>
+                                <div className="info">Beauty and function</div>
+                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-sm-6 col-md-3 col-md-3">
+                            <div className="service-block" >
+                              <div className="ico fa fa-code highlight"></div>
+                              <div className="text-block">
+                                <div className="name">Development</div>
+                                <div className="info">Quality code that lasts</div>
+                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-sm-6 col-md-3 col-md-3">
+                            <div className="service-block" >
+                              <div className="ico fa fa-eye highlight"></div>
+                              <div className="text-block">
+                                <div className="name">Branding/Identity</div>
+                                <div className="info">Leave a lasting impression</div>
+                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-sm-6 col-md-3 col-md-3">
+                            <div className="service-block" >
+                              <div className="ico fa fa-umbrella highlight"></div>
+                              <div className="text-block">
+                                <div className="name">Strategy/Planning</div>
+                                <div className="info">Thinking beyond tomorrow</div>
+                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>    
           <section id="footer">
             <div className="container">
               <div className="row text-center text-xs-center text-sm-left text-md-left">

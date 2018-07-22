@@ -10,10 +10,10 @@ function Plans() {
               <div className="db-wrapper">
                 <div className="db-pricing-eleven db-bk-color-one">
                   <div className="price">
-                    <sup>$</sup>99
-                    <small>per quarter</small>
+                    <p>Free</p>
+                    <small>annual</small>
                   </div>
-                  <div className="type">BASIC PLAN</div>
+                  <div className="type">BASIC</div>
                   <ul>
                     <li>
                       <i className="glyphicon glyphicon-print" />30+ Accounts{" "}
@@ -27,7 +27,7 @@ function Plans() {
                   </ul>
                   <div className="pricing-footer">
                     <a href="#" className="btn db-button-color-square btn-lg">
-                      BOOK ORDER
+                      GET
                     </a>
                   </div>
                 </div>
@@ -37,10 +37,10 @@ function Plans() {
               <div className="db-wrapper">
                 <div className="db-pricing-eleven db-bk-color-two popular">
                   <div className="price">
-                    <sup>$</sup>199
-                    <small>per quarter</small>
+                    <sup>RWF</sup>50,000
+                    <small>per month</small>
                   </div>
-                  <div className="type">MEDIUM PLAN</div>
+                  <div className="type">STANDARD</div>
                   <ul>
                     <li>
                       <i className="glyphicon glyphicon-print" />30+ Accounts{" "}
@@ -54,7 +54,7 @@ function Plans() {
                   </ul>
                   <div className="pricing-footer">
                     <a href="#" className="btn db-button-color-square btn-lg">
-                      BOOK ORDER
+                      GET
                     </a>
                   </div>
                 </div>
@@ -64,10 +64,10 @@ function Plans() {
               <div className="db-wrapper">
                 <div className="db-pricing-eleven db-bk-color-three">
                   <div className="price">
-                    <sup>$</sup>249
-                    <small>per quarter</small>
+                    <sup>RWF</sup>20,000
+                    <small>per 72 hours</small>
                   </div>
-                  <div className="type">ADVANCE PLAN</div>
+                  <div className="type">USAGE BASED</div>
                   <ul>
                     <li>
                       <i className="glyphicon glyphicon-print" />30+ Accounts{" "}
@@ -81,7 +81,7 @@ function Plans() {
                   </ul>
                   <div className="pricing-footer">
                     <a href="#" className="btn db-button-color-square btn-lg">
-                      BOOK ORDER
+                      GET
                     </a>
                   </div>
                 </div>

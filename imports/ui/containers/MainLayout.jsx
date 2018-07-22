@@ -7,6 +7,7 @@ import About from '../pages/About.jsx';
 import Login from '../components/Login';
 import Dashboard from '../pages/Dashboard.jsx';
 import Plans from '../pages/Plans.jsx'
+import Checkout from '../pages/Checkout.jsx';
 import signUp from '../pages/Signup.jsx';
 import NotFound from '../pages/NotFound.jsx';
 
@@ -22,6 +23,7 @@ export default class MainLayout extends React.Component {
               <Route path = '/dashboard' component={Dashboard} />
               <Route path='/plans' component={Plans} />
               <Route path='/login' component={Login} />
+              <Route path='/checkout' component={Checkout} />
               <Route path='/signup' component={signUp} />
               <Route component={NotFound} />
             </Switch>

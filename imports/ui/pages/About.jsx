@@ -7,7 +7,10 @@ function About() {
 
         <p className='text-center'>We aim to help you get a deeper insight<br></br>into the market, identify opportunities <br></br>and make the best decision using <b>DATA</b>.</p>
         <hr></hr>
-        <p className='text-center'>We believe in the power of data.</p>
+        <h2 className='text-center'>We believe in the power of data.</h2>
+        <blockquote className="text-center">The goal is to turn data into information, and information into insight.</blockquote>
+        <h4 className="text-center">Carly Fiorina</h4>
+        <p className="text-center">Former CEO of Helwett-Packard</p>
         <hr></hr>
         <div id="testimonial4" className="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
           <div className="testimonial4_header">
