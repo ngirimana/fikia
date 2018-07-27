@@ -33,3 +33,5 @@ react-meteor-data
 static-html
 twbs:bootstrap
 fortawesome:fontawesome
+d3
+underscore

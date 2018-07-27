@@ -5,7 +5,7 @@ import Header from '../components/Header.jsx';
 import Home from '../pages/Home.jsx';
 import About from '../pages/About.jsx';
 import Login from '../components/Login';
-import Dashboard from '../pages/Dashboard.jsx';
+import Dashboard from '../components/Dashboard';
 import Plans from '../pages/Plans.jsx'
 import Checkout from '../pages/Checkout.jsx';
 import signUp from '../pages/Signup.jsx';
@@ -20,7 +20,7 @@ export default class MainLayout extends React.Component {
             <Switch>
               <Route exact path='/' component={Home} />
               <Route path = '/about' component={About} />
-              <Route path = '/dashboard' component={Dashboard} />
+              <Route exact={true} path = '/dashboard' component={Dashboard} />
               <Route path='/plans' component={Plans} />
               <Route path='/login' component={Login} />
               <Route path='/checkout' component={Checkout} />
