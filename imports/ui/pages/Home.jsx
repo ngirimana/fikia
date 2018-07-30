@@ -1,14 +1,16 @@
 import React from 'react';
 // import classNames from 'classnames';
 import '../../../node_modules/font-awesome/css/font-awesome.min.css'
+import Header from '../components/Header.jsx';
 
 function Home() {
-  return <div className="mainBody container-12">
+  return <div>
+  <Header />
           <div className="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
             <div className="overlay" />
 
             <ol className="carousel-indicators">
-              <li data-target="#bs-carousel" data-slide-to="0" class="active" />
+              <li data-target="#bs-carousel" data-slide-to="0" className="active" />
               <li data-target="#bs-carousel" data-slide-to="1" />
               <li data-target="#bs-carousel" data-slide-to="2" />
             </ol>
@@ -73,9 +75,9 @@ function Home() {
                             <div className="service-block" >
                               <div className="ico fa fa-magic highlight"></div>
                               <div className="text-block">
-                                <div className="name">Web Design</div>
-                                <div className="info">Beauty and function</div>
-                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                <h2>Web Design</h2>
+                                <h4>Beauty and function</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </p>
                               </div>
                             </div>
                           </div>
@@ -83,9 +85,9 @@ function Home() {
                             <div className="service-block" >
                               <div className="ico fa fa-code highlight"></div>
                               <div className="text-block">
-                                <div className="name">Development</div>
-                                <div className="info">Quality code that lasts</div>
-                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                <h2>Development</h2>
+                                <h4>Quality code that lasts</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </p>
                               </div>
                             </div>
                           </div>
@@ -93,9 +95,9 @@ function Home() {
                             <div className="service-block" >
                               <div className="ico fa fa-eye highlight"></div>
                               <div className="text-block">
-                                <div className="name">Branding/Identity</div>
-                                <div className="info">Leave a lasting impression</div>
-                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                <h2>Branding/Identity</h2>
+                                <h4>Leave a lasting impression</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </p>
                               </div>
                             </div>
                           </div>
@@ -103,9 +105,9 @@ function Home() {
                             <div className="service-block" >
                               <div className="ico fa fa-umbrella highlight"></div>
                               <div className="text-block">
-                                <div className="name">Strategy/Planning</div>
-                                <div className="info">Thinking beyond tomorrow</div>
-                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                <h2>Strategy/Planning</h2>
+                                <h4>Thinking beyond tomorrow</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </p>
                               </div>
                             </div>
                           </div>
@@ -117,50 +119,50 @@ function Home() {
               </div>
             </section>
           </div>    
-          <section id="footer">
-            <div className="container">
-              <div className="row text-center text-xs-center text-sm-left text-md-left">
-                <div className="col-xs-12 col-sm-4 col-md-6">
-                  <h5>Quick links</h5>
-                  <ul className="list-unstyled quick-links">
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>Home</a></li>
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>About</a></li>
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>FAQ</a></li>
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>Get Started</a></li>
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>Videos</a></li>
-                  </ul>
-                </div>
-                <div className="col-xs-12 col-sm-4 col-md-6">
-                  <h5>Quick links</h5>
-                  <ul className="list-unstyled quick-links">
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>Home</a></li>
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>About</a></li>
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>FAQ</a></li>
-                    <li><a href="javascript:void();"><i className="fa fa-angle-double-right"></i>Get Started</a></li>
-                    <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i className="fa fa-angle-double-right"></i>Imprint</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                  <ul className="list-unstyled list-inline social text-center">
-                    <li className="list-inline-item"><a href="javascript:void();"><i className="fa fa-facebook"></i></a></li>
-                    <li className="list-inline-item"><a href="javascript:void();"><i className="fa fa-twitter"></i></a></li>
-                    <li className="list-inline-item"><a href="javascript:void();"><i className="fa fa-instagram"></i></a></li>
-                    <li className="list-inline-item"><a href="javascript:void();"><i className="fa fa-google-plus"></i></a></li>
-                    <li className="list-inline-item"><a href="javascript:void();" target="_blank"><i className="fa fa-envelope"></i></a></li>
-                  </ul>
-                </div>
-              <hr></hr>
-            </div>
+          <footer id="myFooter">
+        <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p className="h6">&copy; All right Reversed.<a className="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Fikia Ltd</a></p>
-              </div>
-              <hr></hr>
+                <div className="col-sm-3">
+                    <h2 className="logo"><a href="#">  </a></h2>
+                </div>
+                <div className="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div className="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div className="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div className="col-sm-3">
+                    <div className="social-networks">
+                        <a href="#me" className="twitter"><i className="fa fa-twitter"></i></a>
+                        <a href="#" className="facebook"><i className="fa fa-facebook"></i></a>
+                        <a href="#" className="google"><i className="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" className="btn btn-default">Contact us</button>
+                </div>
             </div>
         </div>
-        </section>         
+        <div className="footer-copyright">
+            <p>© 2018 Copyright Text </p>
+        </div>
+    </footer>
     </div>;
   }
 

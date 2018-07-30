@@ -13,8 +13,8 @@ const data = [
 class Trends extends React.Component{
     render() {
         return (
-            <LineChart width={600} height={300} data={data}
-                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+            <LineChart width={350} height={250} data={data}
+                margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
                 <XAxis dataKey="name" />
                 <YAxis />
                 <CartesianGrid strokeDasharray="3 3" />

@@ -1,29 +1,4 @@
 /* CSS declarations go here */
-Header a.active {
-  font-weight: bold;
-  text-decoration: none;
-  color: #F17300;
-}
-
-Header a:hover {
-    color: #F17300;
-    text-decoration: none;
-}
-
-Header a, #login-buttons a {
-  text-decoration: none;
-  margin-right: 10px;
-  color: white;
-}
-
-Header a {
-  padding-bottom: 10px;
-}
-
-/* THIS IS CSS FOR THE HEADER BAR*/
-.Header {
-    background: #1B5A9B;
-}
 
 .logo {
     height:30px;
@@ -40,9 +15,6 @@ Header a {
 
 /*********** THIS IS CSS FOR THE HOME PAGE *************/
    /*Main body*/
-.mainBody {
-    margin-top: 50px;
-}
   /*CAROUSEL*/
 /********************************/
 /*       Fade Bs-carousel       */
@@ -372,7 +344,6 @@ PRICING STYLES
 
 /**************** CSS FOR ABOUT PAGE *****************/
 .About {
-    margin-top: 60px;
     background: #DBE4EE;
     color: #053D77;
 }
@@ -653,46 +624,6 @@ PRICING STYLES
   }
 }
 
-/***************** THIS IS CSS FOR THE LOGIN ******************/
-.login {
-  margin-bottom: 50px;
-}
-.main {
-  max-width: 320px;
-  margin: 0 auto;
-}
-.login-or {
-  position: relative;
-  font-size: 18px;
-  color: black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  }
-.span-or {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: -2px;
-  margin-left: -25px;
-  background-color: #DBE4EE;
-  width: 50px;
-  text-align: center;
-  }
-.hr-or {
-  background-color: #cdcdcd;
-  height: 1px;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
-h3 {
-  text-align: center;
-  line-height: 300%;
-}
-.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;text-align:left !important;}
-.btn-labeled {padding-top: 0;padding-bottom: 0;}
-.btn { margin-bottom:10px; }
 
 /******************** CSS FOR SIGNUP PAGE **************************/
 
@@ -753,42 +684,25 @@ h3 {
       -webkit-align-items: center;
       justify-content: center
     }
-    .input-group, .form-group {
-      margin-bottom: 10px;
-    }
-    .input-group-addon {
-      background-color: rgba(255, 255, 255, 0.1);
-      border: none;
-      color: #FFFFFF;
-      border-radius:25px;
-    }
-    .form-control,.form-control:focus,.form-control:hover
-    {
-      background-color: rgba(255, 255, 255, 0.1);
-      color: #FFFFFF;
-      border-radius:25px;
-      border:none;
-      font-size:14px;
-    }
+    
+   
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color: #fff !important;
+      color: #000 !important;
     }
     ::-moz-placeholder { /* Firefox 19+ */
-      color: #fff !important;
+      color: #000 !important;
     }
     :-ms-input-placeholder { /* IE 10+ */
-      color: #fff !important;
+      color: #000 !important;
     }
     :-moz-placeholder { /* Firefox 18- */
-      color: #fff !important;
+      color: #000 !important;
     }
     .footer {
       margin-top:40px;
       margin-bottom:40px;
     }
-    input::placeholder {
-      color: #fff !important;
-    }
+  
     .btn-lg {
       font-size: 1em;
       border-radius: 0.25rem;
@@ -834,7 +748,6 @@ h3 {
   background-color: #2e353d;
   position: fixed;
   top: 0px;
-  width: 300px;
   height: 100%;
   color: #e1ffff;
   margin-top: 20px
@@ -968,7 +881,334 @@ h3 {
     display: block;
   }
 }
-body {
-  margin: 0px;
-  padding: 0px;
+body {   
+     margin: 0px;  /*removes default style*/
+ }
+
+/*--------------------------------------  css for footer   -----------------------*/
+#myFooter {
+    background-color: #3c3d41;
+    color: white;
+    padding-top: 30px;
 }
+
+#myFooter .footer-copyright {
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #d84b6b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+.jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+
+  /*------------------------------ plans css ------------------------------*/
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 5px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}
+
+/*------------------------login css ----------------------------*/
+
+  .login-form {
+  
+      padding: 40px auto;
+  }
+    .login-form form {
+      margin-bottom: 15px;
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+    }
+    .login-form h2 {
+        margin: 0 0 5px;
+    }
+    .login-form .hint-text {
+    color: #777;
+    padding-bottom: 15px;
+    text-align: center;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .login-btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .or-seperator {
+        margin: 20px 0 10px;
+        text-align: center;
+        border-top: 1px solid #ccc;
+    }
+    .or-seperator i {
+        padding: 0 10px;
+        background: #f7f7f7;
+        position: relative;
+        top: -11px;
+        z-index: 1;
+    }
+    .social-btn .btn {
+        margin: 10px 0;
+        font-size: 15px;
+        text-align: left; 
+        line-height: 24px;       
+    }
+  .social-btn .btn i {
+    float: left;
+    margin: 4px 15px  0 5px;
+        min-width: 15px;
+  }
+  .input-group-addon .fa{
+    font-size: 18px;
+  }
+
+
+
+.navbar{margin-bottom: 0px; padding-right: 20px;}
+.navbar-default {
+  background-color: #3c8dbc;
+  border-color: #367fa9;
+  -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #aacadd;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #aacadd;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #aacadd;
+  background-color: #367fa9;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #aacadd;
+  background-color: #367fa9;
+}
+.navbar-default .navbar-toggle {
+  border-color: #367fa9;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #367fa9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #aacadd;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #aacadd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #aacadd;
+    background-color: #367fa9;
+  }
+}
+
