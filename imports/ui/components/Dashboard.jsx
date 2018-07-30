@@ -36,7 +36,7 @@ const Icon20 = props => <SvgIcon size={props.size || 20} icon={props.icon} />;
 function Dashboard() {
     return <div>
 <Dheader />
-        <div className="container-fluid" style={{padding:0}}>
+        <div className="sidenav scontainer-fluid" style={{padding:0}}>
             <div className="row">
              <div className="col-md-2 sidebar">
  
@@ -98,61 +98,56 @@ function Dashboard() {
 
    </div>
         <div className="col-md-10 content">
+        <h1>Agriculture</h1>
+            <div className="row">
+                <div className="col-md-5">     
+                    <div className="panel panel-default">
+                    <div className="panel-heading">
+                        Summary
+                    </div>
+                    <div className="panel-body">
+                        <Summary/>
+                    </div>
+                    </div> 
+                </div>
+                <div className="col-md-5">
+                    
+                    <div className="panel panel-default">
+                    <div className="panel-heading">
+                        Trends
+                    </div>
+                    <div className="panel-body">
+                        <Trends/>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+            <div className="col-md-5">     
+                <div className="panel panel-default">
+                <div className="panel-heading">
+                    Penetration
+                </div>
+                <div className="panel-body">
+                <Penetration/>
+                </div>
+                </div> 
+            </div>
 
-        <div className="row">
-  <div className="col-md-5">     
-    <div className="panel panel-default">
-    <div className="panel-heading">
-        Trends
-    </div>
-    <div className="panel-body">
-        <Trends/>
-    </div>
-</div> 
-  </div>
-  <div className="col-md-5">
-      
-              <div className="panel panel-default">
-    <div className="panel-heading">
-        Summary
-    </div>
-    <div className="panel-body">
-        <Summary/>
-    </div>
-</div>
-  </div>
-
-</div>
-<div className="row">
-
-
-  <div className="col-md-5">
-      
-              <div className="panel panel-default">
-    <div className="panel-heading">
-        Penetration
-    </div>
-    <div className="panel-body">
-       <Penetration/>
-    </div>
-</div> 
-  </div>
-
-  <div className="col-md-5">
-       
-              <div className="panel panel-default">
-    <div className="panel-heading">
-        Insight
-    </div>
-    <div className="panel-body">
-        <Insight/>
-    </div>
-</div>
-  </div>
-</div>
+            <div className="col-md-5">    
+                <div className="panel panel-default">
+                <div className="panel-heading">
+                    Insight
+                </div>
+                <div className="panel-body">
+                    <Insight/>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
         </div>     
-             </div>
+        </div>
     </div>
 
 ;
