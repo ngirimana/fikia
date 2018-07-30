@@ -101,7 +101,7 @@ The goal is to turn data into information, and information into insight.
             </div>
         </div>
         <div className="footer-copyright">
-            <p>© 2018 Copyright Text </p>
+            <p>© 2018 Fikia Limited </p>
         </div>
     </footer>
     </div>;

@@ -1,20 +1,27 @@
 /* CSS declarations go here */
 
 .logo {
-    height:30px;
-    margin-top:10px;
-    overflow: hidden; 
+    height:50px;
+    margin-bottom:10px;
+    overflow: hidden;
+    z-index: 999; 
 }
 
 .logo img {
-    height:100%;
+    height:150%;
     margin-left: 5px;
 }
 
+.nav {
+  margin-top: 10px;
+}
 
 
 /*********** THIS IS CSS FOR THE HOME PAGE *************/
    /*Main body*/
+.home {
+  margin-top: 62px;
+}
   /*CAROUSEL*/
 /********************************/
 /*       Fade Bs-carousel       */
@@ -350,12 +357,14 @@ PRICING STYLES
 
 /***************** CSS FOR WHAT WE DO ****************/
 /* #services { margin-top: 0px; } */
-
+#services {
+  margin-top: -60px;
+}
 #services .services-top {
     padding: 0px 0 0px;
 }
-#services .services-list {
-    padding-top: -70px;
+.services-list {
+    margin-top: -70px;
 }
 .services-list .service-block {
     margin-bottom: 35px;

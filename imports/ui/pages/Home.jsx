@@ -6,6 +6,7 @@ import Header from '../components/Header.jsx';
 function Home() {
   return <div>
   <Header />
+          <div className="home">
           <div className="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
             <div className="overlay" />
 
@@ -160,9 +161,10 @@ function Home() {
             </div>
         </div>
         <div className="footer-copyright">
-            <p>© 2018 Copyright Text </p>
+            <p>© 2018 Fikia Limited </p>
         </div>
     </footer>
+    </div>
     </div>;
   }
 
