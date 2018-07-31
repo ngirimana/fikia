@@ -61,7 +61,7 @@ export default class Dheader extends React.Component {
           </div>
         </nav>
 
-        <div className="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div className="modal bs-example-modal-sm" tabIndex="-1" role="dialog" aria-hidden="true">
           <div className="modal-dialog modal-sm">
             <div className="modal-content">
               <div className="modal-header">
