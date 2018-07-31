@@ -38,11 +38,11 @@ function Dashboard() {
 <Dheader />
         <div className="sidenav scontainer-fluid" style={{padding:0}}>
             <div className="row">
-             <div className="col-md-2 sidebar">
+             <div className="col-md-2 sidebar" style={{width:220}}>
  
   
-       <div style={{background: '#2c3e50', color: '#FFF', width: 220,height:700,position:'fixed'}}> 
-        <SideNav highlightColor='#E91E63' highlightBgColor='#00bcd4' defaultSelected='home'> 
+       <div style={{background: '#2c3e50', color: '#FFF', width: 220,height:1000,position:'fixed'}}> 
+        <SideNav highlightColor='#f4511e' highlightBgColor='#00bcd4' defaultSelected='home'> 
         <Title> Categories </Title>      
             <Nav id="home">
             <NavIcon><Icon20 icon={home} /></NavIcon>
@@ -98,9 +98,78 @@ function Dashboard() {
 
    </div>
         <div className="col-md-10 content">
-        <h1>Agriculture</h1>
-            <div className="row">
-                <div className="col-md-5">     
+
+        <div className="row text-center" style={{margin:5}}>
+        <div className="col-md-3">
+<h3>Agriculture</h3>
+</div>
+
+        <div className="col-md-3">
+
+<div className="btn-group">
+  <button type="button" className="btn btn-lg btn-huge btn-primary">Provinces based</button>
+  <button type="button" className="btn btn-lg btn-huge btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span className="caret"></span>
+    <span className="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul className="dropdown-menu">
+    <li><a href="#">Kigali</a></li>
+    <li><a href="#">Western province</a></li>
+    <li><a href="#">Southern province</a></li>
+    <li><a href="#">Eastern province</a></li>
+    <li><a href="#">Northern province</a></li>
+    
+  </ul>
+</div>
+
+    </div>
+
+          <div className="col-md-3">
+
+<div className="btn-group">
+  <button type="button" className="btn btn-lg btn-huge btn-success">Districts based</button>
+  <button type="button" className="btn btn-lg btn-huge btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span className="caret"></span>
+    <span className="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul className="dropdown-menu">
+    <li><a href="#">Kicukiro</a></li>
+    <li><a href="#">Gasabo</a></li>
+    <li><a href="#">Nyarugenge</a></li>
+    <li role="separator" className="divider"></li>
+    <li><a href="#">more...</a></li>
+  </ul>
+</div>
+
+    </div>
+
+
+      <div className="col-md-3">
+
+<div className="btn-group">
+  <button type="button" className="btn btn-lg btn-huge btn-info">Years based</button>
+  <button type="button" className="btn btn-lg btn-huge btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span className="caret"></span>
+    <span className="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul className="dropdown-menu">
+    <li><a href="#">2018</a></li>
+    <li><a href="#">2017</a></li>
+    <li><a href="#">2016</a></li>
+    <li role="separator" className="divider"></li>
+    <li><a href="#">more...</a></li>
+  </ul>
+</div>
+
+    </div>
+
+      
+
+
+ </div>
+        
+            <div className="row" style={{margin:10}}>
+                <div className="col-md-6">     
                     <div className="panel panel-default">
                     <div className="panel-heading">
                         Summary
@@ -110,7 +179,7 @@ function Dashboard() {
                     </div>
                     </div> 
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-6">
                     
                     <div className="panel panel-default">
                     <div className="panel-heading">
@@ -122,8 +191,8 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
-            <div className="row">
-            <div className="col-md-5">     
+            <div className="row"style={{margin:10}}>
+            <div className="col-md-6">     
                 <div className="panel panel-default">
                 <div className="panel-heading">
                     Penetration
@@ -134,7 +203,7 @@ function Dashboard() {
                 </div> 
             </div>
 
-            <div className="col-md-5">    
+            <div className="col-md-6">    
                 <div className="panel panel-default">
                 <div className="panel-heading">
                     Insight

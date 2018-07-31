@@ -1,9 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Meteor } from 'meteor/meteor'
+import { Session } from 'meteor/session'
 
-// import LoginButtons from './LoginButtons.jsx';
+ let email=Session.get('email');
+ console.log(email);
 
 export default class Dheader extends React.Component {
+
   render() {
     return <div>
         <nav className="navbar navbar-default navbar-fixed-top">
@@ -69,7 +73,7 @@ export default class Dheader extends React.Component {
                 <i className="fa fa-question-circle" /> Are you sure you want to log-off?
               </div>
               <div className="modal-footer">
-                <a href="javascript:;" className="btn btn-primary btn-block">
+                <a href="" className="btn btn-primary btn-block" activeClassName="active" to="/">
                   Logout
                 </a>
               </div>

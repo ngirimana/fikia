@@ -1,9 +1,83 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Redirect } from 'react-router-dom'
+import { Meteor } from 'meteor/meteor'
+import { withRouter } from 'react-router-dom'
+import { Session } from 'meteor/session'
 
-// import LoginButtons from './LoginButtons.jsx';
+
 
 export default class Header extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      formValues: {}
+
+    }
+  }
+
+  handleChange(event) {
+    event.preventDefault();
+    let formValues = this.state.formValues;
+    let name = event.target.name;
+    let value = event.target.value;
+
+    formValues[name] = value;
+
+    console.log({formValues});
+
+    this.setState({formValues})
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+
+let em=this.state.formValues.name;
+let pass=this.state.formValues.email;
+
+
+    Meteor.loginWithPassword(em, pass, function(error){
+    if(error){
+        console.log(error.reason);
+        console.log(em);
+        console.log(pass);
+        alert("Invalid username or password");
+
+    } else {
+      
+      Session.set('email', em);
+        alert("success");
+        window.open("/dashboard" , "_self");
+
+    }
+});
+    
+  }
+
+    handleSubmit2(event) {
+    event.preventDefault();
+
+let em=this.state.formValues.name;
+let pass=this.state.formValues.email;
+
+
+  Accounts.createUser({
+    email: em,
+    password: pass
+}, function(error){
+    if(error){
+      alert(error.reason);
+        console.log(error.reason); // Output error if registration fails
+    } else {
+
+        alert("Created successfully");
+        window.open("/dashboard" , "_self");
+    }
+});
+
+  }
+
   render() {
     return <div>
         
@@ -50,7 +124,7 @@ export default class Header extends React.Component {
                 <button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div className="modal-body">
-     <form action="" method="post" className="login-form">
+     <form method="post" className="login-form" onSubmit={this.handleSubmit.bind(this)}>
         <h2 className="text-center">Sign in</h2>    
         <div className="text-center social-btn">
             <a href="#" className="btn btn-primary btn-block"><i className="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
@@ -61,17 +135,17 @@ export default class Header extends React.Component {
         <div className="form-group">
           <div className="input-group">
                 <span className="input-group-addon"><i className="fa fa-user"></i></span>
-                <input type="text" className="form-control" name="username" placeholder="Username" required="required"/>
+                <input type="text" className="form-control" name="name" placeholder="Username" required="required"value={this.state.formValues["name"]} onChange={this.handleChange.bind(this)}/>
             </div>
         </div>
     <div className="form-group">
             <div className="input-group">
                 <span className="input-group-addon"><i className="fa fa-lock"></i></span>
-                <input type="password" className="form-control" name="password" placeholder="Password" required="required"/>
+                <input type="password" className="form-control" name="email" placeholder="Password" required="required"value={this.state.formValues["email"]} onChange={this.handleChange.bind(this)}/>
             </div>
         </div>        
         <div className="form-group">
-            <button type="submit" className="btn btn-success btn-block login-btn">Sign in</button>
+            <button className="btn btn-success btn-block login-btn" type="submit">Sign in</button>
         </div>
         <div className="clearfix">
             <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
@@ -95,7 +169,7 @@ export default class Header extends React.Component {
                 <button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div className="modal-body">
-    <form>
+    <form onSubmit={this.handleSubmit2.bind(this)}>
     <h2 className="text-center">Sign up to <strong>Fikia</strong></h2>    
         <div className="text-center social-btn">
             <a href="#" className="btn btn-primary btn-block"><i className="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
@@ -106,21 +180,21 @@ export default class Header extends React.Component {
        
 <div className="form-group">
                 <label htmlFor="name">Names</label>
-                <input type="text" className="form-control" id="names" placeholder="Enter names"/>
+                <input type="text" className="form-control" id="names" placeholder="Enter names" required="required"/>
               </div>
  <div className="form-group">
                 <label htmlFor="phone">Phone number</label>
-                <input type="phone" className="form-control" id="phone" placeholder="Enter phone"/>
+                <input type="phone" className="form-control" id="phone" placeholder="Enter phone" required="required"/>
               </div>
 
         
               <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Email address</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Enter email"/>
+                <input type="email" className="form-control" id="exampleInputEmail1" name="name" placeholder="Enter email"required="required"value={this.state.formValues["name"]} onChange={this.handleChange.bind(this)}/>
               </div>
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">Password</label>
-                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                <input type="password" className="form-control" id="exampleInputPassword1" name="email" placeholder="Password" required="required"value={this.state.formValues["email"]} onChange={this.handleChange.bind(this)}/>
               </div>
               
                 <p className="help-block">By clicking <strong>sign up</strong> you agree to our <a href="#">our terms and conditions of use</a>.</p>
