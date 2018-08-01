@@ -74,42 +74,53 @@ function Home() {
                         <div className="row">
                           <div className="col-sm-6 col-md-3 col-md-3">
                             <div className="service-block" >
-                              <div className="ico fa fa-magic highlight"></div>
+                              <div className="ico fa fa-briefcase highlight"></div>
                               <div className="text-block">
-                                <h2>Web Design</h2>
-                                <h4>Beauty and function</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </p>
-                              </div>
+                                <h2>Are you a/an:</h2>
+                                <ul>
+                                <li><h5>Entrepreneur?</h5></li>
+                                <li><h5>researcher</h5></li>
+                                <li><h5>Investor?</h5></li>
+                                </ul>
+                                 </div>
                             </div>
                           </div>
                           <div className="col-sm-6 col-md-3 col-md-3">
                             <div className="service-block" >
-                              <div className="ico fa fa-code highlight"></div>
+                              <div className="ico   fa fa-lightbulb-o highlight"></div>
                               <div className="text-block">
-                                <h2>Development</h2>
-                                <h4>Quality code that lasts</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </p>
-                              </div>
+                                <h2>Your aim:</h2>
+                                <ul>
+                                <li><h5>Looking to create an impactfull product/service that serves your community?</h5></li>
+                                
+                                </ul>
+
+                                   </div>
                             </div>
                           </div>
                           <div className="col-sm-6 col-md-3 col-md-3">
                             <div className="service-block" >
-                              <div className="ico fa fa-eye highlight"></div>
+                              <div className="ico fa fa-bar-chart highlight"></div>
                               <div className="text-block">
-                                <h2>Branding/Identity</h2>
-                                <h4>Leave a lasting impression</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </p>
-                              </div>
+                                <h2>Use FIKIA to:</h2>
+                                <ul>
+                                <li><h5>Gain access to reliable ,relevant data</h5></li>
+                                <li><h5>Forecast revenues</h5></li>
+                                <li><h5>Get deeper insights into consumer behaviours.</h5></li>
+                                </ul>      </div>
                             </div>
                           </div>
                           <div className="col-sm-6 col-md-3 col-md-3">
                             <div className="service-block" >
-                              <div className="ico fa fa-umbrella highlight"></div>
+                              <div className="ico fa fa-check highlight"></div>
                               <div className="text-block">
-                                <h2>Strategy/Planning</h2>
-                                <h4>Thinking beyond tomorrow</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </p>
-                              </div>
+                                <h2>Make informed decisions on:</h2>
+                               <ul>
+                                <li><h5>How to glow your business</h5></li>
+                                <li><h5>Where to invest</h5></li>
+                                <li><h5>How/when to expand to other markets.</h5></li>
+                                </ul>
+                                </div>
                             </div>
                           </div>
                         </div>

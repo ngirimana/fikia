@@ -73,7 +73,7 @@ export default class Dheader extends React.Component {
                 <i className="fa fa-question-circle" /> Are you sure you want to log-off?
               </div>
               <div className="modal-footer">
-                <a href="" className="btn btn-primary btn-block" activeClassName="active" to="/">
+                <a href="/home" className="btn btn-primary btn-block" activeClassName="active" to="/">
                   Logout
                 </a>
               </div>
