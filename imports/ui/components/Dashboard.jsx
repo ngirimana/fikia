@@ -41,40 +41,104 @@ function Dashboard() {
              <div className="col-md-2 sidebar" style={{width:220}}>
  
   
-       <div style={{background: '#2c3e50', color: '#FFF', width: 220,height:1000,position:'fixed'}}> 
+       <div style={{background: '#2c3e50', color: '#FFF', width: 220,height:1000,position:'fixed',marginTop:-10}}> 
         <SideNav highlightColor='#f4511e' highlightBgColor='#00bcd4' defaultSelected='home'> 
         <Title> Categories </Title>      
             <Nav id="home">
             <NavIcon><Icon20 icon={home} /></NavIcon>
             <NavText> Home </NavText>
+             <Nav id="dashboard2">
+                <NavIcon><Icon20 size={16} icon={ic_aspect_ratio} /></NavIcon>
+                <NavText> Search </NavText>
+            </Nav>
+            <Nav id="sales2">
+                <NavIcon><Icon20 size={16} icon={ic_business} /></NavIcon>
+                <NavText> Promote </NavText>
+            </Nav>
         </Nav>
         <Nav id="agri">
             <NavIcon><Icon20 icon={leaf} /></NavIcon><NavText> Agriculture</NavText>
+             <Nav id="dashboard2">
+                <NavIcon><Icon20 size={16} icon={ic_aspect_ratio} /></NavIcon>
+                <NavText> Search </NavText>
+            </Nav>
+            <Nav id="sales2">
+                <NavIcon><Icon20 size={16} icon={ic_business} /></NavIcon>
+                <NavText> Promote </NavText>
+            </Nav>
         </Nav>
         <Nav id="tech">
             <NavIcon><Icon20 icon={cogs} /></NavIcon>
             <NavText> Technology </NavText>
+             <Nav id="dashboard2">
+                <NavIcon><Icon20 size={16} icon={ic_aspect_ratio} /></NavIcon>
+                <NavText> Search </NavText>
+            </Nav>
+            <Nav id="sales2">
+                <NavIcon><Icon20 size={16} icon={ic_business} /></NavIcon>
+                <NavText> Promote </NavText>
+            </Nav>
         </Nav>
 
          <Nav id="telecom">
             <NavIcon><Icon20 icon={podcast} /></NavIcon>
             <NavText> Telecom </NavText>
+             <Nav id="dashboard2">
+                <NavIcon><Icon20 size={16} icon={ic_aspect_ratio} /></NavIcon>
+                <NavText> Search </NavText>
+            </Nav>
+            <Nav id="sales2">
+                <NavIcon><Icon20 size={16} icon={ic_business} /></NavIcon>
+                <NavText> Promote </NavText>
+            </Nav>
         </Nav>
          <Nav id="transport">
             <NavIcon><Icon20 icon={airplane} /></NavIcon>
             <NavText> Transportation </NavText>
+             <Nav id="dashboard2">
+                <NavIcon><Icon20 size={16} icon={ic_aspect_ratio} /></NavIcon>
+                <NavText> Search </NavText>
+            </Nav>
+            <Nav id="sales2">
+                <NavIcon><Icon20 size={16} icon={ic_business} /></NavIcon>
+                <NavText> Promote </NavText>
+            </Nav>
         </Nav>
         <Nav id="health">
             <NavIcon><Icon20 icon={heartBroken} /></NavIcon>
             <NavText> Health </NavText>
+             <Nav id="dashboard2">
+                <NavIcon><Icon20 size={16} icon={ic_aspect_ratio} /></NavIcon>
+                <NavText> Search </NavText>
+            </Nav>
+            <Nav id="sales2">
+                <NavIcon><Icon20 size={16} icon={ic_business} /></NavIcon>
+                <NavText> Promote </NavText>
+            </Nav>
         </Nav>
         <Nav id="tourism">
             <NavIcon><Icon20 icon={flag} /></NavIcon>
             <NavText> Tourism </NavText>
+             <Nav id="dashboard2">
+                <NavIcon><Icon20 size={16} icon={ic_aspect_ratio} /></NavIcon>
+                <NavText> Search </NavText>
+            </Nav>
+            <Nav id="sales2">
+                <NavIcon><Icon20 size={16} icon={ic_business} /></NavIcon>
+                <NavText> Promote </NavText>
+            </Nav>
         </Nav>
         <Nav id="farming">
             <NavIcon><Icon20 icon={u1F402} /></NavIcon>
             <NavText> Farming </NavText>
+             <Nav id="dashboard2">
+                <NavIcon><Icon20 size={16} icon={ic_aspect_ratio} /></NavIcon>
+                <NavText> Search </NavText>
+            </Nav>
+            <Nav id="sales2">
+                <NavIcon><Icon20 size={16} icon={ic_business} /></NavIcon>
+                <NavText> Promote </NavText>
+            </Nav>
         </Nav>
         <Nav id="customers">
             <NavIcon><Icon20 icon={ic_people} /></NavIcon>
@@ -101,7 +165,7 @@ function Dashboard() {
 
         <div className="row text-center" style={{margin:5}}>
         <div className="col-md-3">
-<h3>Agriculture</h3>
+<h3>Overview</h3>
 </div>
 
         <div className="col-md-3">
@@ -172,7 +236,7 @@ function Dashboard() {
                 <div className="col-md-6">     
                     <div className="panel panel-default">
                     <div className="panel-heading">
-                        Summary
+                        Access to electricity
                     </div>
                     <div className="panel-body">
                         <Summary/>
@@ -183,7 +247,7 @@ function Dashboard() {
                     
                     <div className="panel panel-default">
                     <div className="panel-heading">
-                        Trends
+                        Population
                     </div>
                     <div className="panel-body">
                         <Trends/>
@@ -195,7 +259,7 @@ function Dashboard() {
             <div className="col-md-6">     
                 <div className="panel panel-default">
                 <div className="panel-heading">
-                    Penetration
+                    Treands
                 </div>
                 <div className="panel-body">
                 <Penetration/>

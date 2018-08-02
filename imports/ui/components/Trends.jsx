@@ -1,30 +1,46 @@
 
 import React, {Component} from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-const data = [
-    { name: 'Page A', uv: 4000, pv: 2400, amt: 2400 },
-    { name: 'Page B', uv: 3000, pv: 1398, amt: 2210 },
-    { name: 'Page C', uv: 2000, pv: 9800, amt: 2290 },
-    { name: 'Page D', uv: 2780, pv: 3908, amt: 2000 },
-    { name: 'Page E', uv: 1890, pv: 4800, amt: 2181 },
-    { name: 'Page F', uv: 2390, pv: 3800, amt: 2500 },
-    { name: 'Page G', uv: 3490, pv: 4300, amt: 2100 },
-];
+const data = [{"value":2933428,"decimal":0,"date":1960},{"value":2996096,"decimal":0,"date":1961},{"value":3050604,"decimal":0,"date":1962},{"value":3102972,"decimal":0,"date":1963},{"value":3161724,"decimal":0,"date":1964},{"value":3232934,"decimal":0,"date":1965},{"value":3319082,"decimal":0,"date":1966},{"value":3418317,"decimal":0,"date":1967},{"value":3527263,"decimal":0,"date":1968},{"value":3640591,"decimal":0,"date":1969},{"value":3754541,"decimal":0,"date":1970},{"value":3868337,"decimal":0,"date":1971},{"value":3983700,"decimal":0,"date":1972},{"value":4102321,"decimal":0,"date":1973},{"value":4226799,"decimal":0,"date":1974},{"value":4359092,"decimal":0,"date":1975},{"value":4499509,"decimal":0,"date":1976},{"value":4647615,"decimal":0,"date":1977},{"value":4803725,"decimal":0,"date":1978},{"value":4968074,"decimal":0,"date":1979},{"value":5140716,"decimal":0,"date":1980},{"value":5315032,"decimal":0,"date":1981},{"value":5489322,"decimal":0,"date":1982},{"value":5673614,"decimal":0,"date":1983},{"value":5881906,"decimal":0,"date":1984},{"value":6120107,"decimal":0,"date":1985},{"value":6407672,"decimal":0,"date":1986},{"value":6732131,"decimal":0,"date":1987},{"value":7030179,"decimal":0,"date":1988},{"value":7216028,"decimal":0,"date":1989},{"value":7235798,"decimal":0,"date":1990},{"value":7051759,"decimal":0,"date":1991},{"value":6701851,"decimal":0,"date":1992},{"value":6299909,"decimal":0,"date":1993},{"value":6005095,"decimal":0,"date":1994},{"value":5928078,"decimal":0,"date":1995},{"value":6115168,"decimal":0,"date":1996},{"value":6522382,"decimal":0,"date":1997},{"value":7059813,"decimal":0,"date":1998},{"value":7593239,"decimal":0,"date":1999},{"value":8025703,"decimal":0,"date":2000},{"value":8329406,"decimal":0,"date":2001},{"value":8536205,"decimal":0,"date":2002},{"value":8680346,"decimal":0,"date":2003},{"value":8818438,"decimal":0,"date":2004},{"value":8991735,"decimal":0,"date":2005},{"value":9206580,"decimal":0,"date":2006},{"value":9447402,"decimal":0,"date":2007},{"value":9708169,"decimal":0,"date":2008},{"value":9977446,"decimal":0,"date":2009},{"value":10246842,"decimal":0,"date":2010},{"value":10516071,"decimal":0,"date":2011},{"value":10788853,"decimal":0,"date":2012},{"value":11065151,"decimal":0,"date":2013},{"value":11345357,"decimal":0,"date":2014},{"value":11629553,"decimal":0,"date":2015},{"value":11917508,"decimal":0,"date":2016},{"value":12208407,"decimal":0,"date":2017}];
+//const data2=[{"value":"0","decimal":"0","date":"1960"},{"value":0,"decimal":"0","date":"1961"},{"value":0,"decimal":"0","date":"1962"},{"value":0,"decimal":"0","date":"1963"},{"value":0,"decimal":"0","date":"1964"},{"value":"0","decimal":"0","date":"1965"},{"value":0,"decimal":"0","date":"1966"},{"value":0,"decimal":"0","date":"1967"},{"value":0,"decimal":"0","date":"1968"},{"value":0,"decimal":"0","date":"1969"},{"value":"0","decimal":"0","date":"1970"},{"value":0,"decimal":"0","date":"1971"},{"value":0,"decimal":"0","date":"1972"},{"value":0,"decimal":"0","date":"1973"},{"value":0,"decimal":"0","date":"1974"},{"value":"0","decimal":"0","date":"1975"},{"value":"0","decimal":"0","date":"1976"},{"value":"0","decimal":"0","date":"1977"},{"value":"0","decimal":"0","date":"1978"},{"value":"0","decimal":"0","date":"1979"},{"value":"0","decimal":"0","date":"1980"},{"value":"0","decimal":"0","date":"1981"},{"value":"0","decimal":"0","date":"1982"},{"value":"0","decimal":"0","date":"1983"},{"value":"0","decimal":"0","date":"1984"},{"value":"0","decimal":"0","date":"1985"},{"value":"0","decimal":"0","date":"1986"},{"value":"0","decimal":"0","date":"1987"},{"value":"0","decimal":"0","date":"1988"},{"value":"0","decimal":"0","date":"1989"},{"value":"0","decimal":"0","date":"1990"},{"value":"0","decimal":"0","date":"1991"},{"value":"0","decimal":"0","date":"1992"},{"value":"0","decimal":"0","date":"1993"},{"value":"0","decimal":"0","date":"1994"},{"value":"0","decimal":"0","date":"1995"},{"value":"0","decimal":"0","date":"1996"},{"value":"0","decimal":"0","date":"1997"},{"value":"0.0708234056624446","decimal":"0","date":"1998"},{"value":"0.144865715408141","decimal":"0","date":"1999"},{"value":"0.485938739572097","decimal":"0","date":"2000"},{"value":"0.780367771723458","decimal":"0","date":"2001"},{"value":"0.965194720604765","decimal":"0","date":"2002"},{"value":"1.50593075437316","decimal":"0","date":"2003"},{"value":"1.55663622060959","decimal":"0","date":"2004"},{"value":"2.47981062609163","decimal":"0","date":"2005"},{"value":"3.41278737598544","decimal":"0","date":"2006"},{"value":"6.72287471201077","decimal":"0","date":"2007"},{"value":"13.6239593686513","decimal":"0","date":"2008"},{"value":"24.3474332008412","decimal":"0","date":"2009"},{"value":"34.6327287958573","decimal":"0","date":"2010"},{"value":"42.2799922138221","decimal":"0","date":"2011"},{"value":"52.746580197172","decimal":"0","date":"2012"},{"value":"60.4524782354981","decimal":"0","date":"2013"},{"value":"68.2836071178721","decimal":"0","date":"2014"},{"value":"75.3220609596947","decimal":"0","date":"2015"},{"value":"74.8607259168611","decimal":"0","date":"2016"},{"value":0,"decimal":"0","date":"2017"}];
+//const data3=[{"value":0,"decimal":"1","date":"1960"},{"value":0,"decimal":"1","date":"1961"},{"value":0,"decimal":"1","date":"1962"},{"value":0,"decimal":"1","date":"1963"},{"value":0,"decimal":"1","date":"1964"},{"value":0,"decimal":"1","date":"1965"},{"value":0,"decimal":"1","date":"1966"},{"value":0,"decimal":"1","date":"1967"},{"value":0,"decimal":"1","date":"1968"},{"value":0,"decimal":"1","date":"1969"},{"value":0,"decimal":"1","date":"1970"},{"value":0,"decimal":"1","date":"1971"},{"value":0,"decimal":"1","date":"1972"},{"value":0,"decimal":"1","date":"1973"},{"value":0,"decimal":"1","date":"1974"},{"value":0,"decimal":"1","date":"1975"},{"value":0,"decimal":"1","date":"1976"},{"value":0,"decimal":"1","date":"1977"},{"value":0,"decimal":"1","date":"1978"},{"value":0,"decimal":"1","date":"1979"},{"value":0,"decimal":"1","date":"1980"},{"value":0,"decimal":"1","date":"1981"},{"value":0,"decimal":"1","date":"1982"},{"value":0,"decimal":"1","date":"1983"},{"value":0,"decimal":"1","date":"1984"},{"value":0,"decimal":"1","date":"1985"},{"value":0,"decimal":"1","date":"1986"},{"value":0,"decimal":"1","date":"1987"},{"value":0,"decimal":"1","date":"1988"},{"value":0,"decimal":"1","date":"1989"},{"value":"0.00999999977648258","decimal":"1","date":"1990"},{"value":"0.00999999977648258","decimal":"1","date":"1991"},{"value":"2.3","decimal":"1","date":"1992"},{"value":"0.0427721999585629","decimal":"1","date":"1993"},{"value":"0.188256278634071","decimal":"1","date":"1994"},{"value":"0.577478110790253","decimal":"1","date":"1995"},{"value":"1.16230273246765","decimal":"1","date":"1996"},{"value":"2.14179015159607","decimal":"1","date":"1997"},{"value":"3.10292291641235","decimal":"1","date":"1998"},{"value":"4.04264211654663","decimal":"1","date":"1999"},{"value":"6.2","decimal":"1","date":"2000"},{"value":"5.85776567459106","decimal":"1","date":"2001"},{"value":"6.74377536773682","decimal":"1","date":"2002"},{"value":"7.62350177764893","decimal":"1","date":"2003"},{"value":"8.50300693511963","decimal":"1","date":"2004"},{"value":"4.8","decimal":"1","date":"2005"},{"value":"10.285608291626","decimal":"1","date":"2006"},{"value":"11.2008304595947","decimal":"1","date":"2007"},{"value":"6","decimal":"1","date":"2008"},{"value":"13.0973424911499","decimal":"1","date":"2009"},{"value":"9.7","decimal":"1","date":"2010"},{"value":"10.8","decimal":"1","date":"2011"},{"value":"16.0697765350342","decimal":"1","date":"2012"},{"value":"15.2","decimal":"1","date":"2013"},{"value":"19.8","decimal":"1","date":"2014"},{"value":"22.8","decimal":"1","date":"2015"},{"value":"29.37","decimal":"1","date":"2016"},{"value":0,"decimal":"1","date":"2017"}];
 class Trends extends React.Component{
     render() {
         return (
+            <div>
             <LineChart width={350} height={250} data={data}
                 margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
-                <XAxis dataKey="name" />
+                <XAxis dataKey="date" />
                 <YAxis />
                 <CartesianGrid strokeDasharray="3 3" />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="value" stroke="#8884d8" activeDot={{ r: 8 }} />
+                <Line type="monotone" dataKey="date" stroke="#b7283d" activeDot={{ r: 8 }} />
+                
             </LineChart>
+
+             <div className="card card-inverse card-primary ">
+                   <blockquote className="card-blockquote p-3">
+                        <p>Rwandan Population, total<br/>
+                      <button type="button" className="btn btn-info" data-toggle="collapse" data-target="#demo">More...</button>
+  <div id="demo" className="collapse">
+   <small><i>Source: (1) United Nations Population Division. World Population Prospects: 2017 Revision. 
+   (2) Census reports and other statistical publications from national statistical offices, (3) Eurostat: Demographic Statistics,
+    (4) United Nations Statistical Division. Population and Vital Statistics Reprot (various years),
+     (5) U.S. Census Bureau: International Database, and (6) Secretariat of the Pacific Community: Statistics and Demography Programme.</i><br/>
+
+Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates.</small> </div>
+                  
+                  </p>
+                    </blockquote>
+                </div>
+                </div>
         );
     }
 }
 
 export default Trends;
+
+
+  

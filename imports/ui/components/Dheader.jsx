@@ -45,16 +45,16 @@ export default class Dheader extends React.Component {
             </ul>
             <form className="navbar-form navbar-left" action="">
               <div className="input-group">
-                <input type="text" className="form-control" placeholder="Search" />
+                <input type="text" className="form-control"style={{ width: 350,marginTop:5 }} placeholder="Search" />
                 <div className="input-group-btn">
-                  <button className="btn btn-default" type="submit">
+                  <button className="btn btn-default" type="submit"style={{ marginTop: 5 }}>
                     <i className="glyphicon glyphicon-search" />
                   </button>
                 </div>
               </div>
             </form>
             <ul className="nav navbar-nav navbar-right">
-              <button style={{ margin: 10 }} type="button" className="btn btn-danger btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm">
+              <button style={{ margin: 5 }} type="button" className="btn btn-danger btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm">
                 <span className="glyphicon glyphicon-log-out" /> Log out
               </button>
             </ul>
