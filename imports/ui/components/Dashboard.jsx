@@ -268,14 +268,7 @@ function Dashboard() {
             </div>
 
             <div className="col-md-6">    
-                <div className="panel panel-default">
-                <div className="panel-heading">
-                    Insight
-                </div>
-                <div className="panel-body">
-                    <Insight/>
-                </div>
-                </div>
+               
             </div>
             </div>
         </div>

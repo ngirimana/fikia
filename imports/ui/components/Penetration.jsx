@@ -9,7 +9,7 @@ class Penetration extends React.Component{
         return (
           <div>
            <PieChart width={300} height={250}>
-        <Pie isAnimationActive={false} data={data01} cx={125} cy={150} outerRadius={80} fill="#8884d8" label/>
+        <Pie isAnimationActive={false} data={data01} cx={150} cy={125} outerRadius={80} fill="#8884d8" label/>
         <Tooltip/>
        </PieChart>
         <div className="card card-inverse card-primary ">

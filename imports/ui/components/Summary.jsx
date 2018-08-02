@@ -7,7 +7,7 @@ class Summary extends React.Component{
     render() {
         return (
           <div>
-            <BarChart width={350} height={250} data={data}
+            <BarChart width={450} height={250} data={data}
             margin={{top: 0, right: 0, left: 0, bottom: 0}}>
        <CartesianGrid strokeDasharray="3 3"/>
        <XAxis dataKey="date"/>
